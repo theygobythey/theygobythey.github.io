@@ -1,0 +1,119 @@
+html {
+	font-family: "Libre Baskerville";
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+strong {
+	font-size: 24pt;
+	font-weight: normal;
+	font-style: italic;
+}
+
+section { margin: 0;}
+
+section > header {
+	background: black;
+	color: white;
+
+	font-family: "IM Fell DW Pica SC";
+	font-size: 18pt;
+	text-align: center;
+
+
+	display: block;
+	padding: 5px;
+	margin: 0;
+}
+
+#bio {
+	margin: 0;
+	position: relative;
+}
+
+#bio-img {
+	width: 100%;
+	max-width: 1029px;
+}
+
+.content-box {
+	padding: 25px;
+	margin: 0;
+}
+
+/*********** Bio ***********/
+
+#bio > .content-box {
+	background: white;
+}
+
+@media all and (min-width: 1029px) {
+	#bio > .content-box {
+		position: absolute;
+		left: 50%;
+		top: 50px;
+		right: 50px;
+	}
+
+	#bio-img {
+		margin-left: -20%;
+	}
+
+	#bio {
+		max-height: 683px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	#bio-img {
+		margin-left: -240px;
+	}
+}
+
+/********** Gender Assimilation **********/
+
+#gender-assimilation {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: #990099;
+	color: #ffffaa;	
+}
+
+#gender-assimilation > .content-box {
+	margin: 0;
+}
+
+#gender-assimilation-img {
+	width: 100%;
+	max-width: 760px;
+	margin: 0;
+}
+
+@media all and (min-width: 761px) {
+	#gender-assimilation {
+		max-height: 950px;
+	}
+
+	#gender-assimilation-img {
+		width: 550px;
+	}
+
+	#gender-assimilation > .content-box {
+		position: absolute;
+		left: 550px;
+		top: 0;
+		right: 0;
+	}	
+}
